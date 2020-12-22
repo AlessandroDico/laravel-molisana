@@ -1,0 +1,33 @@
+.header-container {
+    @include displayFlex(column, center, center);
+    padding: 0 20px;
+    .header-top {
+
+        .logo-container {
+            max-width: 250px;
+            max-height: 145px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .header-bottom {
+        padding: $mainSpace;
+
+        ul {
+            @include displayFlex(row, center, center);
+
+            a {
+                padding: $mainSpace;
+                color: $mainTextColor;
+                font-size: $mainFontSize;
+
+                &:hover {
+                    background-color: $mainColor;
+                }
+            }
+        }
+
+    }
+}

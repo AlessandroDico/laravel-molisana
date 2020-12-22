@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: $mainTextColor;
+}
+
+ul {
+    list-style-type: none;
+}
