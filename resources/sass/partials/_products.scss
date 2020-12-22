@@ -1,12 +1,24 @@
-.card-container {
-    @include displayFlex(row, center, center);
-    flex-wrap: wrap;
-    .card {
-        width: calc(100% / 3 - 10px);
-        margin: $mainSpace / 4;
+section.pruducts-section {
+    background-image: url('/images/sfondo-sezione-prodotti.jpg');
+}
 
-        img {
-            width: 100%;
+h2 {
+    color: $secondaryTextColor;
+    margin: $mainSpace 0;
+}
+
+.pruducts-section-container {
+    padding: $mainSpace 0;
+    .card-container {
+        @include displayFlex(row, flex-start, center);
+        flex-wrap: wrap;
+        .card {
+            width: calc(100% / 3 - 10px);
+            margin: $mainSpace / 4;
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
