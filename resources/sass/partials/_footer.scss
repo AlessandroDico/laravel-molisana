@@ -1,0 +1,21 @@
+.footer-container {
+    @include displayFlex(row, center, center);
+    .footer-left {
+        width: 40%;
+        padding-right: $mainSpace;
+
+        .footer-logo-container {
+            max-width: 250px;
+            max-height: 145px;
+            img {
+                width: 100%;
+            }
+
+        }
+    }
+
+    .footer-right {
+        width: 60%;
+        padding-left: $mainSpace;
+    }
+}

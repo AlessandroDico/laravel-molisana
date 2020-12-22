@@ -152,3 +152,7 @@ Route::get('/prodotti', function () {
     ];
     return view('prodotti', $data);
 })->name('product');
+
+Route::get('/news', function(){
+    return view('news');
+})->name('news-about');

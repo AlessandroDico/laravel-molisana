@@ -1,4 +1,3 @@
-{{-- <h2>header</h2> --}}
 <div class="header-container">
     <div class="header-top">
         <div class="logo-container">
@@ -15,7 +14,7 @@
                     <a href="{{ route('product') }}">Prodotti</a>
                 </li>
                 <li>
-                    <a href="#">News</a>
+                    <a href="{{ route('news-about') }}">News</a>
                 </li>
             </ul>
         </div>
