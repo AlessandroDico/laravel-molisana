@@ -1,6 +1,6 @@
 .footer-container {
     @include displayFlex(row, flex-start, flex-start);
-    padding: $mainSpace * 2 0;
+    padding-top: $mainSpace * 2;
     color: $footerTextColor;
 
     .footer-left {
@@ -46,5 +46,13 @@
             }
         }
 
+    }
+}
+
+.footer-final-image {
+    max-width: 100%;
+
+    img {
+        width: 100%;
     }
 }

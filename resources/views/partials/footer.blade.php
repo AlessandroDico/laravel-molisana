@@ -88,3 +88,6 @@
         </div>
     </div>
 </div>
+<div class="footer-final-image">
+    <img src="{{ asset('/images/mountain-final-image.jpg') }}" alt="immagine-di-montagne">    
+</div>

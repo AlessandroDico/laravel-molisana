@@ -111,7 +111,7 @@ h2 {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 40px 0;
+  padding-top: 40px;
   color: #b5b5b5;
 }
 
@@ -159,5 +159,13 @@ h2 {
 .footer-container .footer-right .footer-boxes .footer-box li a {
   color: #b5b5b5;
   font-size: 14px;
+}
+
+.footer-final-image {
+  max-width: 100%;
+}
+
+.footer-final-image img {
+  width: 100%;
 }
 
