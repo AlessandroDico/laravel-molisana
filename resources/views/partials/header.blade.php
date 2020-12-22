@@ -9,10 +9,10 @@
         <div class="nav-menu">
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="{{ url('/') }}">Home</a>
                 </li>
                 <li>
-                    <a href="#">Prodotti</a>
+                    <a href="{{ route('product') }}">Prodotti</a>
                 </li>
                 <li>
                     <a href="#">News</a>

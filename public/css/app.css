@@ -60,3 +60,20 @@ ul {
   background-color: #b3e5fc;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-container .card {
+  width: calc(100% / 3 - 10px);
+  margin: 5px;
+}
+
+.card-container .card img {
+  width: 100%;
+}
+
