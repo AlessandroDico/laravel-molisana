@@ -1,12 +1,16 @@
 .footer-container {
-    @include displayFlex(row, center, center);
+    @include displayFlex(row, flex-start, flex-start);
+    padding: $mainSpace * 2 0;
+    color: $footerTextColor;
+
     .footer-left {
         width: 40%;
-        padding-right: $mainSpace;
+        padding-right: $mainSpace * 3;
 
         .footer-logo-container {
             max-width: 250px;
             max-height: 145px;
+
             img {
                 width: 100%;
             }
@@ -17,5 +21,30 @@
     .footer-right {
         width: 60%;
         padding-left: $mainSpace;
+
+        .footer-boxes {
+            @include displayFlex(row, flex-start, flex-start);
+            flex-wrap: wrap;
+
+            .footer-box {
+                width: 50%;
+                padding: $mainSpace;
+
+                h3 {
+                    font-size: $mainFontSize;
+                    margin-bottom: $mainSpace;
+                }
+
+                li {
+                    margin: $mainSpace / 2 0;
+
+                    a {
+                        color: $footerTextColor;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
     }
 }

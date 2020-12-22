@@ -11,17 +11,80 @@
             </div>
         </div>
         <div class="footer-right">
-            <ul>
-                <li>
-                    hello
-                </li>
-                <li>
-                    hello
-                </li>
-                <li>
-                    hello
-                </li>
-            </ul>
+            <div class="footer-boxes">
+                <div class="footer-box">
+                    <h3 class="text-uppercase">pastificio</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Il Pastificio</a>
+                        </li>
+                        <li>
+                            <a href="#">Grano decorticato a pietra</a>
+                        </li>
+                        <li>
+                            <a href="#">Il Molise c'è</a>
+                        </li>
+                        <li>
+                            <a href="#">Filiera Integrata</a>
+                        </li>
+                        <li>
+                            <a href="#">100 anni di pasta</a>
+                        </li>
+                        <li>
+                            <a href="#">Sartoria della pasta</a>
+                        </li>
+                        <li>
+                            <a href="#">Spaghetto quadrato</a>
+                        </li>
+                        <li>
+                            <a href="#">Le Persone</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h3 class="text-uppercase">collezione da chef</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Collezione da Chef</a>
+                        </li>
+                        <li>
+                            <a href="#">Grandi Cucine</a>
+                        </li>
+                        <li>
+                            <a href="#">Biologiche</a>
+                        </li>
+                        <li>
+                            <a href="#">Quadrate</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h3 class="text-uppercase">prodotti</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Le Classiche</a>
+                        </li>
+                        <li>
+                            <a href="#">Le Integrali</a>
+                        </li>
+                        <li>
+                            <a href="#">Le Speciali</a>
+                        </li>
+                        <li>
+                            <a href="#">Le Biologiche</a>
+                        </li>
+                        <li>
+                            <a href="#">Le Gluten-Free</a>
+                        </li>
+                        <li>
+                            <a href="#">Le Semole</a>
+                        </li>
+                        <li>
+                            <a href="#">Le Extra di Lusso</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
