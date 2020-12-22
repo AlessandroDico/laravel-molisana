@@ -11,6 +11,11 @@
                         @foreach ($shape as $type)
                             <div class="card">
                                 <img src="{{ $type['src'] }}" alt="{{ $type['titolo'] }}">
+                                <a class="overlay" href="#">
+                                    <div >
+                                        {{ $type['titolo'] }}
+                                    </div>
+                                </a>
                             </div>
                         @endforeach
                     </div>
