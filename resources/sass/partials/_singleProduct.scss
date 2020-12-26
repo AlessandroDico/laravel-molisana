@@ -1,0 +1,18 @@
+.single-product-title {
+    text-align: center;
+    margin-bottom: 3px;
+
+    background-color: $mainColor;
+    h2 {
+        margin: 0;
+        padding: $mainSpace;
+    }
+}
+
+.type-pasta-img, .packaging-pasta-img {
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
