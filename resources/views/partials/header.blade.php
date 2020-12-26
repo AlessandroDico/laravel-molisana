@@ -14,6 +14,7 @@
                 </li>
                 <li>
                     <a
+                    id="{{ Request::route()->getName() == 'singleItem' ? 'active' : '' }}"
                     class="{{ Request::route()->getName() == 'product' ? 'active' : '' }}"
                     href="{{ route('product') }}">Prodotti</a>
                 </li>

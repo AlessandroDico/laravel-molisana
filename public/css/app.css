@@ -57,7 +57,7 @@ ul {
   color: black;
   font-size: 24px;
 }
-.header-container .header-bottom ul a:hover, .header-container .header-bottom ul a.active {
+.header-container .header-bottom ul a:hover, .header-container .header-bottom ul a.active, .header-container .header-bottom ul a#active {
   background-color: #b8dae6;
 }
 

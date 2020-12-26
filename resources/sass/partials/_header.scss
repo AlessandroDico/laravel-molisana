@@ -23,7 +23,7 @@
                 color: $mainTextColor;
                 font-size: $mainFontSize;
 
-                &:hover, &.active {
+                &:hover, &.active, &#active {
                     background-color: $mainColor;
                 }
             }
