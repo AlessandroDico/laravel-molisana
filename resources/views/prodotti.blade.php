@@ -24,3 +24,7 @@
         </div>
     </section>
 @endsection
+
+{{-- non ha importanza l'ordine delle section  --}}
+{{-- se come contenuto ho solo una striga posso passarglielo come secondo parametro --}}
+@section('page-title', 'Prodotti - La Molisana')

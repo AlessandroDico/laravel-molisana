@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>titolo</title>
+        <title>@yield('page-title')</title>
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         {{-- google fonts --}}
         <link rel="preconnect" href="https://fonts.gstatic.com">
