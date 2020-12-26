@@ -8,15 +8,23 @@
         <div class="nav-menu">
             <ul>
                 <li>
-                    <a href="{{ url('/') }}">Home</a>
+                    <a
+                    class="{{ Request::route()->getName() == 'homepage' ? 'active' : '' }}"
+                    href="{{ url('/') }}">Home</a>
                 </li>
                 <li>
-                    <a href="{{ route('product') }}">Prodotti</a>
+                    <a
+                    class="{{ Request::route()->getName() == 'product' ? 'active' : '' }}"
+                    href="{{ route('product') }}">Prodotti</a>
                 </li>
                 <li>
-                    <a href="{{ route('news-about') }}">News</a>
+                    <a
+                    class="{{ Request::route()->getName() == 'news-about' ? 'active' : '' }}"
+                    href="{{ route('news-about') }}">News</a>
                 </li>
             </ul>
         </div>
+        {{-- getName legge il nome in questo caso della route --}}
+        {{-- {{ Request::route()->getName()}} --}}
     </div>
 </div>
