@@ -16,3 +16,67 @@
         display: block;
     }
 }
+
+.description-paragraph {
+    background-color: $mainColor;
+    padding-bottom: $mainSpace * 2;
+
+    .dettails-container {
+        padding-bottom: $mainSpace * 2;
+    }
+
+    .dettails-top {
+        @include displayFlex(row, space-around, center);
+
+        div {
+            @include displayFlex(column, center, center);
+            width: calc(100% / 3 - 1px);
+            padding: $mainSpace / 2 0;
+
+            &.dettails-logo {
+                border-right: 1px solid black;
+            }
+
+            &.dettails-quality-logo {
+                border-left: 1px solid black;
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            h3 {
+                font-size: $mainFontSize;
+                color: $secondaryTextColor;
+            }
+        }
+    }
+
+    .dettails-bottom {
+        @include displayFlex(row, space-around, center);
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        font-size: $mainFontSize;
+        color: $secondaryTextColor;
+
+        div {
+            @include displayFlex(column, center, center);
+            width: calc(100% / 3 - 1px);
+            padding: $mainSpace 0;
+
+            &.dettails-type {
+                border-right: 1px solid black;
+            }
+
+            &.dettails-weight {
+                border-left: 1px solid black;
+            }
+        }
+    }
+
+    p {
+        color: $secondaryTextColor;
+        font-size: $mainFontSize;
+        line-height: 1.8;
+    }
+}
