@@ -8,10 +8,11 @@
                 @foreach($shapes as $key => $shape)
                     <h2 class="text-uppercase">{{ $key }}</h2>
                     <div class="card-container">
-                        @foreach ($shape as $type)
+                        @foreach ($shape as $index => $type)
                             <div class="card">
                                 <img src="{{ $type['src'] }}" alt="{{ $type['titolo'] }}">
-                                <a class="overlay" href="#">
+                                <a class="overlay"
+                                    href="{{ route('singleItem', ['id' => $index]) }}">
                                     <div >
                                         {{ $type['titolo'] }}
                                     </div>

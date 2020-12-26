@@ -22,6 +22,7 @@ Route::get('/', function () {
     return view('home');
 })->name('homepage');
 
+
 Route::get('/prodotti', function () {
     $arrayPasta = config('pastaData');
     // ora il mio array non è modificato quindi per modificarlo e creare dei sotto array per stampare in pagina filtro l'array principale
@@ -47,9 +48,9 @@ Route::get('/prodotti', function () {
 
     $arrayPasta_collection = collect($arrayPasta);
 
-$longPasta = $arrayPasta_collection->where('tipo', 'lunga');
-$shortPasta = $arrayPasta_collection->where('tipo', 'corta');
-$veryShortPasta = $arrayPasta_collection->where('tipo', 'cortissima');
+    $longPasta = $arrayPasta_collection->where('tipo', 'lunga');
+    $shortPasta = $arrayPasta_collection->where('tipo', 'corta');
+    $veryShortPasta = $arrayPasta_collection->where('tipo', 'cortissima');
 
     $data = [
         'shapes' => [
@@ -68,3 +69,33 @@ $veryShortPasta = $arrayPasta_collection->where('tipo', 'cortissima');
 Route::get('/news', function(){
     return view('news');
 })->name('news-about');
+
+Route::get('prodotti/prodotto/{id}', function($id){
+    $arrayPasta = config('pastaData');
+    $data = [
+        'prodotto' => $arrayPasta[$id],
+    ];
+    return view('singoloProdotto', $data);
+})->name('singleItem');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
