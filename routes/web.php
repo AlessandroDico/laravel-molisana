@@ -26,6 +26,10 @@ Route::get('/prodotti', function () {
     $arrayPasta = config('pastaData');
     // ora il mio array non è modificato quindi per modificarlo e creare dei sotto array per stampare in pagina filtro l'array principale
 
+
+// UN PRIMO MODO PER FILTRARE L'ARRAY E' CON LA FUNZIONE ARRAY_FILTER DI PHP
+
+/*
     $longPasta = array_filter($arrayPasta, function($item){
         return $item['tipo'] == 'lunga';
     });
@@ -35,6 +39,17 @@ Route::get('/prodotti', function () {
     $veryShortPasta = array_filter($arrayPasta, function($item){
         return $item['tipo'] == 'cortissima';
     });
+*/
+
+// UN SECONDO MODO PER FILTRARE L'ARRRAY E' CON LE COLLECTION
+// per usare questo metodo devo passare il mio array ad una funzione collect()
+//creo quindi una nuova funzione che contiene la collect del mio array cosi da poter utilizzare su di esso tutte le funzioni legate alle collection
+
+    $arrayPasta_collection = collect($arrayPasta);
+
+$longPasta = $arrayPasta_collection->where('tipo', 'lunga');
+$shortPasta = $arrayPasta_collection->where('tipo', 'corta');
+$veryShortPasta = $arrayPasta_collection->where('tipo', 'cortissima');
 
     $data = [
         'shapes' => [
