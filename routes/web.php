@@ -72,10 +72,15 @@ Route::get('/news', function(){
 
 Route::get('prodotti/prodotto/{id}', function($id){
     $arrayPasta = config('pastaData');
-    $data = [
-        'prodotto' => $arrayPasta[$id],
-    ];
-    return view('singoloProdotto', $data);
+
+    if (is_numeric($id) && $id >= 0 && $id < count($arrayPasta)) {
+        $data = [
+            'prodotto' => $arrayPasta[$id],
+        ];
+        return view('singoloProdotto', $data);
+    } else {
+        abort('404');
+    }
 })->name('singleItem');
 
 
