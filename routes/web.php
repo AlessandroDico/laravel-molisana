@@ -76,6 +76,11 @@ Route::get('prodotti/prodotto/{id}', function($id){
     if (is_numeric($id) && $id >= 0 && $id < count($arrayPasta)) {
         $data = [
             'prodotto' => $arrayPasta[$id],
+            'indice' => $id,
+            'indicePlus' => $id + 1,
+            'indiceLess' => $id - 1,
+            'indiceMax' => (count($arrayPasta) - 1),
+            'indiceMin' => 0,
         ];
         return view('singoloProdotto', $data);
     } else {
