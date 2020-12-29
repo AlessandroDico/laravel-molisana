@@ -1,0 +1,18 @@
+body.error-page-body {
+    height: 100vh;
+    background-color: $mainColor;
+    @include displayFlex(column, center, center);
+
+    #error-fof-title, #error-fof-paragraph {
+        color: $secondaryTextColor;
+    }
+
+    #error-fof-title {
+        font-size: $mainFontSize * 2;
+        margin: $mainSpace 0;
+    }
+
+    #error-fof-paragraph {
+        font-size: $mainFontSize;
+    }
+}
