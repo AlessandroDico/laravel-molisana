@@ -80,3 +80,41 @@
         line-height: 1.8;
     }
 }
+
+// SEZIONE RIGUARDANTE LE FRECCE PER CAMBIO PAGINA
+
+.type-pasta-images-container {
+    position: relative;
+
+    .left-arrow-link, .right-arrow-link {
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.5);
+
+        a {
+            display: block;
+            padding: $mainSpace;
+            color: $secondaryTextColor;
+            
+            i {
+                display: block;
+            }
+        }
+    }
+
+    .left-arrow-link {
+        left: 20px;
+    }
+
+    .right-arrow-link {
+        right: 20px;
+    }
+}
+
+
+
+
+
+/**/

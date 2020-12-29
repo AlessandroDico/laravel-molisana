@@ -192,6 +192,32 @@ h2 {
   line-height: 1.8;
 }
 
+.type-pasta-images-container {
+  position: relative;
+}
+.type-pasta-images-container .left-arrow-link, .type-pasta-images-container .right-arrow-link {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.type-pasta-images-container .left-arrow-link a, .type-pasta-images-container .right-arrow-link a {
+  display: block;
+  padding: 20px;
+  color: #002d75;
+}
+.type-pasta-images-container .left-arrow-link a i, .type-pasta-images-container .right-arrow-link a i {
+  display: block;
+}
+.type-pasta-images-container .left-arrow-link {
+  left: 20px;
+}
+.type-pasta-images-container .right-arrow-link {
+  right: 20px;
+}
+
+/**/
 .footer-container {
   display: flex;
   flex-direction: row;

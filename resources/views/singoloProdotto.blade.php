@@ -4,11 +4,23 @@
     <div class="single-product-title">
         <h2>{{$prodotto['titolo']}}</h2>
     </div>
-    <div class="type-pasta-img">
-        <img src="{{ $prodotto['src-h'] }}" alt="{{ $prodotto['titolo'] }}">
-    </div>
-    <div class="packaging-pasta-img">
-        <img src="{{ $prodotto['src-p'] }}" alt="{{$prodotto['titolo'] . ' confezionato' }}">
+    <div class="type-pasta-images-container">
+        <div class="type-pasta-img">
+            <img src="{{ $prodotto['src-h'] }}" alt="{{ $prodotto['titolo'] }}">
+        </div>
+        <div class="packaging-pasta-img">
+            <img src="{{ $prodotto['src-p'] }}" alt="{{$prodotto['titolo'] . ' confezionato' }}">
+        </div>
+        <div class="left-arrow-link">
+            <a href="#">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="right-arrow-link">
+            <a href="#">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
     </div>
     <div class="description-paragraph">
         <div class="container">
