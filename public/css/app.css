@@ -192,15 +192,12 @@ h2 {
   line-height: 1.8;
 }
 
-.type-pasta-images-container {
-  position: relative;
-}
 .type-pasta-images-container .left-arrow-link, .type-pasta-images-container .right-arrow-link {
   font-size: 50px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(219, 235, 244, 0.5);
 }
 .type-pasta-images-container .left-arrow-link a, .type-pasta-images-container .right-arrow-link a {
   display: block;

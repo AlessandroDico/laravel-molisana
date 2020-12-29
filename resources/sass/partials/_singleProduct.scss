@@ -84,20 +84,19 @@
 // SEZIONE RIGUARDANTE LE FRECCE PER CAMBIO PAGINA
 
 .type-pasta-images-container {
-    position: relative;
 
     .left-arrow-link, .right-arrow-link {
         font-size: 50px;
-        position: absolute;
+        position: fixed;
         top: 50%;
         transform: translateY(-50%);
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(219, 235, 244, 0.5);
 
         a {
             display: block;
             padding: $mainSpace;
             color: $secondaryTextColor;
-            
+
             i {
                 display: block;
             }
