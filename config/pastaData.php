@@ -45,7 +45,7 @@
             "src" => "https://www.lamolisana.it/wp-content/uploads/2017/06/11-spaghettino-quadrato-m.jpg",
             "src-h" => "https://www.lamolisana.it/wp-content/uploads/2017/06/11-spaghettino-quadrato-h.jpg",
             "src-p" => "https://www.lamolisana.it/wp-content/uploads/2017/06/11-spaghettino-quadrato-p.jpg",
-            "titolo" => "n.11 Spaghettino Quadrato",
+            "titolo" => "N.12 Bucatini",
             "tipo" => "lunga",
             "cottura" => "9 min",
             "peso" => "500g",
