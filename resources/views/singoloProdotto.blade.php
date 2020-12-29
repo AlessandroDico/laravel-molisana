@@ -12,12 +12,12 @@
             <img src="{{ $prodotto['src-p'] }}" alt="{{$prodotto['titolo'] . ' confezionato' }}">
         </div>
         <div class="left-arrow-link">
-            <a href="{{ $indiceLess > $indiceMin ? $indiceLess : $indiceMax }}">
+            <a href="{{ $indiceLess >= $indiceMin ? $indiceLess : $indiceMax }}">
                 <i class="fas fa-chevron-left"></i>
             </a>
         </div>
         <div class="right-arrow-link">
-            <a href="{{ $indicePlus < $indiceMax ? $indicePlus : $indiceMin }}">
+            <a href="{{ $indicePlus <= $indiceMax ? $indicePlus : $indiceMin }}">
                 <i class="fas fa-chevron-right"></i>
             </a>
         </div>
