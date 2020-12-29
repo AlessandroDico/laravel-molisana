@@ -93,7 +93,7 @@
         ],
         [
             "src" => "https://www.lamolisana.it/wp-content/uploads/2017/07/55-chifferi-rigati-m.jpg",
-            "src-h" => "https://www.lamolisana.it/wp-content/uploads/2017/07/55-chifferi-rigati-h.jpg",
+            "src-h" => "https://www.lamolisana.it/wp-content/uploads/2017/07/55-chifferi-rigati-h-1.jpg",
             "src-p" => "https://www.lamolisana.it/wp-content/uploads/2017/07/55-chifferi-rigati-p-2018.jpg",
             "titolo" => "N.55 Chifferi rigati",
             "tipo" => "corta",
